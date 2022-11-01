@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="prod.css">
+    <title>Products page</title>
+</head>
+<body>
+    
+    <section class="header">
+        <div class="nav">
+            <div class="logo">
+                <a href=""><img src="img/dark-logo.png"  id="logo_img" alt=""></a>
+            </div>
+            <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="cart.html">Cart</a></li>
+                        <li><a href="Account.html">Account</a></li>
+                    </ul>
+            </nav>
+            <div class="search">
+                <input type="text" id="search_inp" placeholder="Shirts, shoes, accessories,etc">
+                <button class="searh_btn">Search</button>
+        </div>
+        </div>
+    </section>
+
+
+
+    <div class="hero">
+
+    </div>
+
+
+    
+
+    <h1>Our Products</h1>
+    <hr id="line">
+
+    <section class="products1">
+        <div class="shirts_container" id="item1">
+            <div class="shirts_img">
+                <img src="img/blue shirt.jpg" alt="" id="Bs" class="img">
+                <p>Blue Shirt</p>
+                
+             <button   class="add">Add to Cart</button> 
+            </div>
+        </div>
+    
+        <!---p2-->
+        <div class="shirts_img">
+                <img src="img/17.jpg" alt="" class="img" id="pj">
+                <p>Multi-colored Puma jacket</p>
+                <button   class="add">Add to Cart</button>
+            </div>
+    
+             <!---p2-->
+        <div class="shirts_img">
+            <img src="img/blue jacket.jpg" alt="" class="img" id="Bj">
+            <p>Blue jacket</p>
+            <button class="add" >Add to Cart</button></a>
+        </div>
+    
+        
+         <!---p2-->
+         <div class="shirts_img">
+            <img src="img/african.jpg" alt="" class="img" id="Bgs">
+            <p>Black Dress with Green Skirt</p>
+            <button class="add" >Add to Cart</button></a>
+        </div>
+    
+
+        
+        <div class="shirts_container">
+            <div class="shirts_img">
+                <img src="img/card1.png" alt="" class="img" id="Gfd">
+                <p>Green floral dress</p>
+                <button class="add" >Add to Cart</button></a>
+            </div>
+        </div>
+
+        <!---p2-->
+        <div class="shirts_img">
+                <img src="img/card2.png" alt="" class="img" id="Bsb">
+                <p>Blue Shirt with bag</p>
+                <button class="add" >Add to Cart</button></a>
+            </div>
+
+             <!---p2-->
+        <div class="shirts_img">
+            <img src="img/card3.png" alt="" class="img" id="Wtd">
+            <p>White top and down</p>
+            <button class="add" onclick="addToCart(item6)">Add to Cart</button></a>
+        </div>
+
+    <!---p2-->
+    <div class="shirts_img">
+        <img src="img/man.jpg" alt="" id="Wj">
+        <p>White Shirt with Jeans</p>
+        <button class="add" onclick="addToCart(item7)">Add to Cart</button></a>
+    </div>
+
+     <!---p2-->
+     <div class="shirts_img" >
+        <img src="img/model2.jpg" alt="" id="Dg">
+        <p>Dark green coat</p>
+        <button class="add" onclick="addToCart(item8)">Add to Cart</button></a>
+    </div>
+
+     <!---p2-->
+     <div class="shirts_img">
+        <img src="img/men-collection.png" alt="" id="Rc">
+        <p>Red and blue coat</p>
+        <button class="add" onclick="addToCart(item9)">Add to Cart</button></a>
+    </div>
+
+     <!---p2-->
+     <div class="shirts_img">
+        <img src="img/red jacket.jpg" alt="" id="Rj">
+        <p>Red Jacket</p>
+        <button class="add" onclick="addToCart(item10)">Add to Cart</button></a>
+    </div>
+
+     <!---p2-->
+     <div class="shirts_img">
+        <img src="img/product image 3.png" alt="" id="Cc">
+        <p>Green Calvin Klein Shirt</p>
+        <button class="add" onclick="addToCart(item11)">Add to Cart</button></a>
+    </div>
+
+     <!---p2-->
+     <div class="shirts_img">
+        <img src="img/VG.jpg" alt="" id="s">
+        <p>Scarf</p>
+        <button class="add" onclick="addToCart(item12)">Add to Cart</button></a>
+    </div>
+
+     <!---p2-->
+     <div class="shirts_img">
+        <img src="img/women-collection.png" alt="" id="bj">
+        <p>Brown Jacket</p>
+        <button class="add" onclick="addToCart(item13)">Add to Cart</button></a>
+    </div>
+
+
+    </section>
+
+
+    <h2>Shoes</h2>
+    <hr id="line">
+
+    <section class="products1">
+         <!---p2-->
+         <div class="shirts_img">
+            <img src="img/nike shoe.jpg" alt="">
+            <p>Blue Shirt</p>
+            <button class="add" onclick="addToCart(item14)">Add to Cart</button></a>
+        </div>
+
+         <!---p2-->
+         <div class="shirts_img">
+            <img src="img/vhans.jpg" alt="">
+            <p>Blue Shirt</p>
+            <button class="add" onclick="addToCart(item15)">Add to Cart</button></a>
+        </div>
+
+         <!---p2-->
+         <div class="shirts_img">
+            <img src="img/pexels-ox-street-5710077.jpg" alt="">
+            <p>Blue Shirt</p>
+            <button class="add" onclick="addToCart(item16)">Add to Cart</button></a>
+        </div>
+
+         <!---p2-->
+         <div class="shirts_img">
+            <img src="img/pexels-ox-street-5710086.jpg" alt="">
+            <p>Blue Shirt</p>
+            <button class="add" onclick="addToCart(item17)">Add to Cart</button></a>
+        </div>
+
+         <!---p2-->
+         <div class="shirts_img">
+            <img src="img/pexels-ox-street-6050921.jpg" alt="">
+            <p>Blue Shirt</p>
+            <button class="add" onclick="addToCart(item18)">Add to Cart</button></a>
+        </div>
+
+         <!---p2-->
+         <div class="shirts_img">
+            <img src="img/pexels-ready-made-3987290.jpg" alt="">
+            <p>Blue Shirt</p>
+           <button class="add" onclick="addToCart(item19)">Add to Cart</button></a>
+        </div>
+
+         <!---p2-->
+         <div class="shirts_img">
+            <img src="img/pexels-wallace-chuck-4932841.jpg" alt="">
+            <p>Blue Shirt</p>
+            <button class="add" onclick="addToCart(item20)">Add to Cart</button></a>
+        </div>
+
+         <!---p2-->
+         <div class="shirts_img">
+            <img src="img/pexels-wallace-chuck-4932844.jpg" alt="">
+            <p>Blue Shirt</p>
+            <button class="add" onclick="addToCart(item21)">Add to Cart</button></a>
+        </div>
+
+
+        <div class="shirts_container">
+            <div class="shirts_img">
+                <img src="img/1.jpg" alt="">
+                <p>Blue Shirt</p>
+                <a href="Account.html"><button class="add">Add to Cart</button></a>
+            </div>
+        </div>
+
+        <!---p2-->
+        <div class="shirts_img">
+                <img src="img/6.jpg" alt="">
+                <p>Blue Shirt</p>
+                <a href="Account.html"><button class="add">Add to Cart</button></a>
+            </div>
+
+             <!---p2-->
+        <div class="shirts_img">
+            <img src="img/pexels-loc-dang-2421374.jpg" alt="">
+            <p>Blue Shirt</p>
+            <a href="Account.html"><button class="add">Add to Cart</button></a>
+        </div>
+
+             <!---p2-->
+             <div class="shirts_img">
+                <img src="img/7.jpg" alt="">
+                <p>Blue Shirt</p>
+                <a href="Account.html"><button class="add">Add to Cart</button></a>
+            </div>
+    </section>
+
+    <h2>Accessories</h2>
+    <hr id="line">
+
+    <section class="products1">
+         <!---p2-->
+         <div class="shirts_img">
+            <img src="img/3.jpg" alt="">
+            <p>Blue Shirt</p>
+            <a href="Account.html"><button class="add">Add to Cart</button></a>
+        </div>
+
+         <!---p2-->
+         <div class="shirts_img">
+            <img src="img/4.jpg" alt="">
+            <p>Blue Shirt</p>
+            <a href="Account.html"><button class="add">Add to Cart</button></a>
+        </div>
+         <!---p2-->
+         <div class="shirts_img">
+            <img src="img/9.jpg" alt="">
+            <p>Blue Shirt</p>
+            <a href="Account.html"><button class="add">Add to Cart</button></a>
+        </div>
+
+         <!---p2-->
+         <div class="shirts_img">
+            <img src="img/11.jpg" alt="">
+            <p>Blue Shirt</p>
+            <a href="Account.html"><button class="add">Add to Cart</button></a>
+        </div>
+
+         <!---p2-->
+         <div class="shirts_img">
+            <img src="img/13.jpg" alt="">
+            <p>Blue Shirt</p>
+            <a href="Account.html"><button class="add">Add to Cart</button></a>
+        </div>
+
+         <!---p2-->
+         <div class="shirts_img">
+            <img src="img/18.jpg" alt="">
+            <p>Blue Shirt</p>
+            <a href="Account.html"><button class="add">Add to Cart</button></a>
+        </div>
+
+         <!---p2-->
+         <div class="shirts_img">
+            <img src="img/22.jpg" alt="">
+            <p>Blue Shirt</p>
+            <a href="Account.html"><button class="add">Add to Cart</button></a>
+        </div>
+
+         <!---p2-->
+         <div class="shirts_img">
+            <img src="img/blue purse.jpg" alt="">
+            <p>Blue Shirt</p>
+            <a href="Account.html"><button class="add">Add to Cart</button></a>
+        </div>
+
+        
+    </section>
+
+   
+  
+
+
+    <footer>
+        <div class="fcontainer">
+            <div class="fimg">
+               <a href=""><img src="img/light-logo.png" alt="" height="100px"></a> 
+            </div>
+            <div class="f_info">
+                <h1 class="fheader">About Us</h1>
+                    <ul class="flist">
+                        <li>Contact</li>
+                        <li>Company</li>
+                       
+                        <li>Affiliates</li>
+                        <li>Shops</li>
+                    </ul>
+            </div>
+
+            <div class="f_info">
+                <h1 class="fheader">Products</h1>
+                    <ul class="flist">
+                        <li>Shirts</li>
+                        <li>Dresses</li>
+                        <li>Shoes</li>
+                        <li>Accessories</li>
+                        
+                    </ul>
+            </div>
+
+            <div class="f_info">
+                <h1 class="fheader">Useful Links</h1>
+                    <ul class="flist">
+                        <li>Support</li>
+                        <li>Refund</li>
+                        <li>FAQ</li>
+                        <li>Feedback</li>
+                        
+                    </ul>
+            </div>
+        </div>
+            <h3 class="media_head">Follow Us</h3>
+                <div class="smedia">
+                       <a href=""><img src="img/icons8-facebook-96.png" alt="" class="social" width="50px" height="50px"></a> 
+                        <a href=""><img src="img/icons8-twitter-96.png" alt="" class="social" width="50px" height="50px"></a>
+                        <a href=""><img src="img/icons8-instagram-96.png" alt="" class="social" width="50px" height="50px"></a>
+                </div>
+        <div class="copyright">
+                <hr id="line1">
+            <p class="cp">copyright @Clothing-2022</p><br>
+            <p class="arr">All rights reserved</p>
+
+
+        </div>
+        
+           
+
+    </footer>
+
+    <script src="cart.js"></script>
+
+</body>
+</html>

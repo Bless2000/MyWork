@@ -1,0 +1,387 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body
+{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.header
+{
+    width: 100%;
+    height: 17vh;
+    position: fixed;
+    border-bottom: 6px;
+    box-shadow: 0 25px 20px -20px rgba(0, 0, 0, 0.4);
+    background: white;
+    z-index: 9;
+}
+
+.nav
+{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    justify-content: space-around;
+}
+
+#logo_img
+{
+    height: 15vh;
+    cursor: pointer;
+}
+
+nav
+{
+    align-items: center;
+    margin-top: 50px;
+    margin-right: 20px;
+}
+
+nav ul
+{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+nav ul li
+{
+    padding: 10px 25px;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    margin-left: 10px;
+    margin-right: 10px;
+    transition: color 0.4s;
+}
+
+nav ul li a
+{
+	text-decoration: none;
+	font-size: 25px;
+ 	color: black;
+}
+
+nav ul li a:hover
+{
+    cursor: pointer;
+}
+
+nav ul li::after
+{
+    content: "";
+    width: 100%;
+    height: 80%;
+    z-index: -1;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: orange;
+    border-radius: 20px;
+    position: absolute;
+    opacity: 0;
+    transition: top 0.4s, opacity 0.4s;
+}
+
+nav ul li:hover::after
+{
+    opacity: 1;
+    top: 50%;
+}
+
+.search
+{
+    margin-top: 9vh;
+    border: none;
+    display: flex;
+    
+}
+
+#search_inp
+{
+    width: 20vw;
+    height: 27px;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    outline: 0;
+    border: solid 1px orange;
+}
+
+.searh_btn
+{
+    width: 60px;
+    height: 27px;
+    background: orange;
+    outline: none;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    border: solid 1px orange;
+}
+
+.searh_btn:hover
+{
+    cursor: pointer;
+}
+
+.hero_img
+{
+    width: 100%;
+    height: 82vh;
+    background-image: url("img/home-back.jpg");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+
+.hero_text
+{
+    font-size: 50px;
+    font-weight: 700;
+    color: black;
+}
+
+.container
+{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: space-around;
+}
+
+.products_head
+{
+    font-size: xx-large;
+    text-align: center;
+    margin-top: 30px;
+    font-weight: 700;
+}
+
+.head_span
+{
+    color: orange;
+}
+
+.product{
+    font-size: 20px;
+    padding: 12px;
+    margin-top: 10px;
+}
+
+.product:hover
+{
+    border: 1px solid;
+    padding: 8px;
+    transition: padding 8px 1s;
+    border-radius: 10px;
+    background-color: rgb(214, 226, 236);
+}
+
+.buy
+{
+    padding: 10;
+    outline: none;
+    color: black;
+    font-weight: 200;
+    font-size: 16px;
+    margin-top: 7px;
+    border-radius: 10px;
+    height: 40px;
+    border-color: orange;
+    background: orange;
+    width: 90px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.signUp_container
+{
+    display: flex;
+    width: 100%;
+    height: 500px;
+    flex: 1;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    background-color: black;
+    
+}
+
+.s_text
+{
+    font-weight: 200;
+    font-size: 70px;
+    color: whitesmoke;
+    font-family: nunito, sans-serif, thin;
+}
+
+.sign_btn
+{
+    background-color: orange;
+    border-color: black;
+    border-radius: 10px;
+    margin-bottom: 40px;
+    outline: none;
+    color: black;
+    padding: 10px;
+    width: 200px;
+    height: 10vh;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.sign_btn:hover
+{
+    padding: 7px;
+    border-color: aliceblue;
+    transition: .4s;
+    background-color: rgb(175, 131, 48);
+}
+
+.brands_head
+{
+    margin-top: 30px;
+    font-size: xx-large;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.brands_container
+{
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    
+}
+
+.brand_img
+{
+    padding: 12px;
+    font-size: 24px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.brand_img:hover
+{
+    padding: 10px;
+    border: solid 1px;
+    border-radius: 5px;
+
+}
+
+.features
+{
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(216, 157, 48);
+    align-items: center;
+    padding: 15px;
+}
+
+.feature
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.feature-title
+{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+
+
+
+footer
+{
+    background-color: rgb(41, 34, 34);
+    width: 100%;
+   color: white;
+   margin-top: 10px;
+   padding-top: 50px;
+}
+
+.fheader
+{
+    font-size: 27px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.fcontainer
+{
+    display: flex;
+    justify-content: space-around; 
+}
+
+.fimg
+{
+    cursor: pointer;
+}
+
+.flist
+{
+    list-style: none;
+    margin-bottom: 6px;
+    cursor: pointer;
+}
+
+.flist li
+{
+    margin-bottom: 5px;
+    opacity: .5;
+    padding: 3px;
+}
+
+.flist li:hover
+{
+    opacity: 1;
+    padding: 5px;
+}
+.media_head
+{
+    margin-left: 70px;
+}
+.smedia
+{
+    margin-left: 50px;
+    padding: 15px;
+}
+
+.social
+{
+    color: white;
+}
+
+hr
+{
+    width: 55vw;
+    border: 1px solid orange;
+    margin-left: 300px;    
+}
+
+.copyright
+{
+    text-align: center;
+}
+
+.cp
+{
+    padding: 0;
+    margin-bottom: 0;
+}

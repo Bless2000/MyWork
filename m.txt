@@ -1,0 +1,209 @@
+who's true davido
+last last
+
+
+
+
+
+    <div class="hero">
+
+    </div>
+
+    <h1>Shirts</h1>
+    <hr id="line">
+
+    <section class="products1">
+        
+
+        <div class="shirts_container">
+            <div class="shirts_img">
+                <img src="img/blue shirt.jpg" alt="">
+                <p>Blue Shirt</p>
+                <a href="Account.html"><button class="add">Add to Cart</button></a>
+            </div>
+        </div>
+
+        <!---p2-->
+        <div class="shirts_img">
+                <img src="img/blue shirt.jpg" alt="">
+                <p>Blue Shirt</p>
+                <a href="Account.html"><button class="add">Add to Cart</button></a>
+            </div>
+
+             <!---p2-->
+        <div class="shirts_img">
+            <img src="img/blue shirt.jpg" alt="">
+            <p>Blue Shirt</p>
+            <a href="Account.html"><button class="add">Add to Cart</button></a>
+        </div>
+
+        
+         <!---p2-->
+         <div class="shirts_img">
+            <img src="img/blue shirt.jpg" alt="">
+            <p>Blue Shirt</p>
+            <a href="Account.html"><button class="add">Add to Cart</button></a>
+        </div>
+
+         <!---p2-->
+         <div class="shirts_img">
+            <img src="img/blue shirt.jpg" alt="">
+            <p>Blue Shirt</p>
+            <a href="Account.html"><button class="add">Add to Cart</button></a>
+        </div>
+         <!---p2-->
+         <div class="shirts_img">
+            <img src="img/blue shirt.jpg" alt="">
+            <p>Blue Shirt</p>
+            <a href="Account.html"><button class="add">Add to Cart</button></a>
+        </div>
+
+         <!---p2-->
+         <div class="shirts_img">
+            <img src="img/blue shirt.jpg" alt="">
+            <p>Blue Shirt</p>
+            <a href="Account.html"><button class="add">Add to Cart</button></a>
+        </div>
+
+         <!---p2-->
+         <div class="shirts_img">
+            <img src="img/blue shirt.jpg" alt="">
+            <p>Blue Shirt</p>
+            <a href="Account.html"><button class="add">Add to Cart</button></a>
+        </div>
+
+         <!---p2-->
+         <div class="shirts_img">
+            <img src="img/blue shirt.jpg" alt="">
+            <p>Blue Shirt</p>
+            <a href="Account.html"><button class="add">Add to Cart</button></a>
+        </div>
+
+         <!---p2-->
+         <div class="shirts_img">
+            <img src="img/blue shirt.jpg" alt="">
+            <p>Blue Shirt</p>
+            <a href="Account.html"><button class="add">Add to Cart</button></a>
+        </div>
+
+         <!---p2-->
+         <div class="shirts_img">
+            <img src="img/blue shirt.jpg" alt="">
+            <p>Blue Shirt</p>
+            <a href="Account.html"><button class="add">Add to Cart</button></a>
+        </div>
+
+         <!---p2-->
+         <div class="shirts_img">
+            <img src="img/blue shirt.jpg" alt="">
+            <p>Blue Shirt</p>
+            <a href="Account.html"><button class="add">Add to Cart</button></a>
+        </div>
+
+         <!---p2-->
+         <div class="shirts_img">
+            <img src="img/blue shirt.jpg" alt="">
+            <p>Blue Shirt</p>
+            <a href="Account.html"><button class="add">Add to Cart</button></a>
+        </div>
+
+         <!---p2-->
+         <div class="shirts_img">
+            <img src="img/blue shirt.jpg" alt="">
+            <p>Blue Shirt</p>
+            <a href="Account.html"><button class="add">Add to Cart</button></a>
+        </div>
+
+         <!---p2-->
+         <div class="shirts_img">
+            <img src="img/blue shirt.jpg" alt="">
+            <p>Blue Shirt</p>
+            <a href="Account.html"><button class="add">Add to Cart</button></a>
+        </div>
+
+         <!---p2-->
+         <div class="shirts_img">
+            <img src="img/blue shirt.jpg" alt="">
+            <p>Blue Shirt</p>
+            <a href="Account.html"><button class="add">Add to Cart</button></a>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+.hero
+{
+    width: 100%;
+    height: 17vh;
+    border-radius: 6px;
+    background-color: white;
+}
+
+h1
+{
+    font-size: 5rem;
+    margin-left: 7rem;
+}
+
+#line
+{
+    border: 1px solid orange;
+}
+
+.products1
+{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding: 20px;
+}
+
+.add
+{
+    background-color: orange;
+    padding: 12px;
+    color: black;
+    font-weight: 200;
+    width: 100px;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    cursor: pointer;
+}
+
+.shirts_img:hover
+{
+    
+        border: 1px solid;
+        transition: padding 8px 1s;
+        border-radius: 10px;
+}
+
+p
+{
+    font-size: 20px;
+    font-weight: 200;
+    padding: 15px;
+}
+
+
+
+
+On GitHub.com, navigate to the main page of the repository.
+Above the list of files, using the Add file drop-down, click Upload files.
+"Upload files" in the "Add file" dropdown
+Drag and drop the file or folder you'd like to upload to your repository onto the file tree.
+Drag and drop area
+At the bottom of the page, type a short, meaningful commit message that describes the change you made to the file. You can attribute the commit to more than one author in the commit message. For more information, see "Creating a commit with multiple co-authors."
+Commit message for your change
+Below the commit message fields, decide whether to add your commit to the current branch or to a new branch. If your current branch is the default branch, you should choose to create a new branch for your commit and then create a pull request. For more information, see "Creating a new pull request."
+Commit branch options
+Click Commit changes.
+Commit changes button

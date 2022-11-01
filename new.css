@@ -1,0 +1,38 @@
+.container
+{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    width: max-content;
+}
+
+.card
+{
+    border: 1px solid;
+    width: max-content;
+    text-align: center;
+    display: inline-block;
+    margin: 5px;
+}
+
+.card img
+{
+    width: 300px;
+    padding: 5px;
+}
+
+.cart
+{
+width: 250px;
+float: right;
+text-align: center;
+border: 1px solid black;
+overflow-y: scroll;
+height: 900px;
+}
+
+.cartImg
+{
+    width: 200px;
+}

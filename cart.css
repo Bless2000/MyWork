@@ -1,0 +1,340 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body
+{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.header
+{
+    width: 100%;
+    height: 17vh;
+    position: fixed;
+    border-bottom: 6px;
+    box-shadow: 0 25px 20px -20px rgba(0, 0, 0, 0.4);
+    background: white;
+    z-index: 9;
+}
+
+.nav
+{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    justify-content: space-around;
+}
+
+#logo_img
+{
+    height: 15vh;
+    cursor: pointer;
+}
+
+nav
+{
+    align-items: center;
+    margin-top: 50px;
+    margin-right: 20px;
+}
+
+nav ul
+{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+nav ul li
+{
+    padding: 10px 25px;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    margin-left: 10px;
+    margin-right: 10px;
+    transition: color 0.4s;
+}
+
+nav ul li a
+{
+	text-decoration: none;
+	font-size: 25px;
+ 	color: black;
+}
+
+nav ul li a:hover
+{
+    cursor: pointer;
+}
+
+nav ul li::after
+{
+    content: "";
+    width: 100%;
+    height: 80%;
+    z-index: -1;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: orange;
+    border-radius: 20px;
+    position: absolute;
+    opacity: 0;
+    transition: top 0.4s, opacity 0.4s;
+}
+
+nav ul li:hover::after
+{
+    opacity: 1;
+    top: 50%;
+}
+
+.search
+{
+    margin-top: 9vh;
+    border: none;
+    display: flex;
+    
+}
+
+#search_inp
+{
+    width: 20vw;
+    height: 27px;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    outline: 0;
+    border: solid 1px orange;
+}
+
+.searh_btn
+{
+    width: 60px;
+    height: 27px;
+    background: orange;
+    outline: none;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    border: solid 1px orange;
+}
+
+.searh_btn:hover
+{
+    cursor: pointer;
+}
+
+h1
+{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.hero
+{
+    width: 100%;
+    height: 17vh;
+    border-radius: 6px;
+    background-color: white;
+}
+
+
+.product_container
+{
+    max-width: 700px;
+    justify-content: space-around;
+    margin: 0 auto;
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 80px;
+   
+}
+
+.product_header
+{
+    width: 100%;
+    max-width: 700px;
+    display: flex;
+    justify-content: space-between;
+    background-color: orange;
+    font-weight: 500;
+    border: 2px solid;
+    align-items: center;
+    margin-left: 30px 
+}
+
+.product_body
+{
+    width: 100%;
+    max-width: 700px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    
+    font-weight: 500;
+    border-bottom: 2px solid;
+    align-items: center;
+    margin-left: 30px 
+}
+
+.product_body .item
+{
+    height: 200px;
+}
+
+
+.p_title
+{
+    width: 45%;
+    border: 1px solid;
+}
+
+.price 
+{
+    width: 20%;
+    border: 2px solid;
+    display: flex;
+    align-items: center;
+}
+
+.price 
+{
+    width: 20%;
+    border: 2px solid;
+    display: flex;
+    align-items: center;
+}
+
+.total 
+{
+    width: 20%;
+    border: 2px solid;
+    display: flex;
+    align-items: center;
+}
+
+.product 
+{
+    width: 45%;
+    display: flex;
+    border: 2px solid;
+    display: flex;
+    align-items: center;
+    padding: 18ox 0;
+}
+
+
+
+
+
+
+.c_txt
+{
+    padding: 10px;
+}
+
+.c_in
+{
+    width: 300px;
+    height: 1.5rem;
+    padding: 7px;
+    margin-left: 50px;
+    margin-bottom: 12px;
+}
+
+.cb
+{
+    height: 30px;
+    width: 390px;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 500;
+    background-color: orange;
+    margin-left: 15px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+footer
+{
+    background-color: rgb(41, 34, 34);
+    width: 100%;
+   color: white;
+   margin-top: 10px;
+   padding-top: 50px;
+}
+
+.fheader
+{
+    font-size: 27px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.fcontainer
+{
+    display: flex;
+    justify-content: space-around; 
+}
+
+.fimg
+{
+    cursor: pointer;
+}
+
+.flist
+{
+    list-style: none;
+    margin-bottom: 6px;
+    cursor: pointer;
+}
+
+.flist li
+{
+    margin-bottom: 5px;
+    opacity: .5;
+    padding: 3px;
+}
+
+.flist li:hover
+{
+    opacity: 1;
+    padding: 5px;
+}
+.media_head
+{
+    margin-left: 70px;
+}
+.smedia
+{
+    margin-left: 50px;
+    padding: 15px;
+}
+
+.social
+{
+    color: white;
+}
+
+hr
+{
+    width: 55vw;
+    border: 1px solid orange;
+    margin-left: 300px;    
+}
+
+.copyright
+{
+    text-align: center;
+}
+
+.cp
+{
+    padding: 0;
+    margin-bottom: 0;
+}

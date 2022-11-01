@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="account.css">
+    <title>Account Page</title>
+</head>
+<body>
+    <section class="header">
+        <div class="nav">
+            <div class="logo">
+                <a href=""><img src="img/dark-logo.png"  id="logo_img" alt=""></a>
+            </div>
+            <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="cart.html">Cart</a></li>
+                    </ul>
+            </nav>
+            <div class="search">
+                <input type="text" id="search_inp" placeholder="Shirts, shoes, accessories,etc">
+                <button class="searh_btn">Search</button>
+        </div>
+        </div>
+    </section>
+
+    <section class="cover">
+        <img src="img/home-back.jpg" alt="" width="100%" height="25vh">
+    </section>
+
+    <section class="login">
+        <div class="form_head">
+            <span onclick="logIn()">Login</span>
+            <span onclick="signUp()">Sign Up</span>
+            <hr id="line">
+        </div>
+
+        <form id="Login">
+            <p>Username</p>
+            <input type="text" placeholder="Username" id="name">
+            <p>Password</p>
+            <input type="password" placeholder="Password" id="pass">
+            <button type="submit" onclick="Check()">Login</button><br><br>
+            <a href="" class="form_li">Forgot Password</a>
+        </form>
+
+        <form id="Sign">
+            <p>Username</p>
+            <input type="text" placeholder="Username" id="Uname">
+            <p>Email</p>
+            <input type="email" placeholder="Email" id="email">
+            <P>Password</P>
+            <input type="password" placeholder="Password" id="password">
+            <button type="submit" onclick="Verify()">Sign Up</button>
+        </form>
+    </section>
+
+
+
+
+  
+    <footer>
+        <div class="fcontainer">
+            <div class="fimg">
+               <a href=""><img src="img/light-logo.png" alt="" height="100px"></a> 
+            </div>
+            <div class="f_info">
+                <h1 class="fheader">About Us</h1>
+                    <ul class="flist">
+                        <li>Contact</li>
+                        <li>Company</li>
+                        <li>Carreer</li>
+                        <li>Affiliates</li>
+                        <li>Shops</li>
+                    </ul>
+            </div>
+
+            <div class="f_info">
+                <h1 class="fheader">Products</h1>
+                    <ul class="flist">
+                        <li>Shirts</li>
+                        <li>Dresses</li>
+                        <li>Shoes</li>
+                        <li>Accessories</li>
+                        <li>Hats</li>
+                    </ul>
+            </div>
+
+            <div class="f_info">
+                <h1 class="fheader">Useful Links</h1>
+                    <ul class="flist">
+                        <li>Support</li>
+                        <li>Refund</li>
+                        <li>FAQ</li>
+                        <li>Feedback</li>
+                        <li>Stories</li>
+                    </ul>
+            </div>
+        </div>
+            <h3 class="media_head">Follow Us</h3>
+                <div class="smedia">
+                       <a href=""><img src="img/icons8-facebook-96.png" alt="" class="social" width="50px" height="50px"></a> 
+                        <a href=""><img src="img/icons8-twitter-96.png" alt="" class="social" width="50px" height="50px"></a>
+                        <a href=""><img src="img/icons8-instagram-96.png" alt="" class="social" width="50px" height="50px"></a>
+                </div>
+        <div class="copyright">
+                <hr>
+            <p class="cp">copyright @Clothing-2022</p><br>
+            <p class="arr">All rights reserved</p>
+
+
+        </div>
+    </footer>
+        <!--js for login/sign up toggle-->
+    <script>
+        var Login= document.getElementById("Login");
+        var Sign= document.getElementById("Sign");
+        var line= document.getElementById("line");
+        var name
+        var pass
+        var email
+        var Uname
+        var password
+
+      function signUp()
+      {
+        Sign.style.transform = "translateX(0px)";
+        Login.style.transform = "translateX(0px)";
+        line.style.transform = "translateX(-107px)";
+      }
+
+      function logIn()
+      {
+        Login.style.transform = "translateX(400px)";
+        Sign.style.transform = "translateX(500px)";
+        line.style.transform = "translateX(-280px)";
+      }
+
+      function Check()
+			{
+				name = document.getElementById("name").value;
+				pass = document.getElementById("pass").value;
+                
+
+				if(name.length == " ")
+				{
+					alert("enter Username");
+				}
+				else if(pass.length == " ")
+				{
+					alert("enter Password");
+				}
+                else if(email.length == " ")
+                {
+                    alert("enter your email");
+                }
+				else
+				{
+					alert("WELCOME ");
+				}
+            }
+
+            function Verify()
+            {
+                Uname = document.getElementById("Uname").value;
+                email = document.getElementById("email").value;
+                password = document.getElementById("password").value;
+
+			    if(Uname=="")
+			    {
+			    	alert("Please enter name");
+			    }
+			    else if(email=="")
+			    {
+				    alert("Please enter your email account");
+			    }
+			    else if(password=="")
+			    {
+				    alert("Enter your new password");
+			    }
+                else
+                {
+                    alert("Welcome");
+                }
+            }
+
+    </script>
+    
+</body>
+</html>

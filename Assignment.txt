@@ -1,0 +1,67 @@
+Blessed
+
+-------------------------------------------------------------------------------------------------
+TEXT
+
+BLOB
+
+CHAR and VARCHAR
+
+BINARY and VARBINARY
+
+ENUM
+
+SET
+
+DATE 
+
+TIME 
+
+DATETIME 
+
+TIMESTAMP 
+
+YEAR
+
+
+
+
+MySQL String Data Types (Text Formats)
+
+In MySQL, string data types usually store data as long strings of text, for example, feedback or product description. Strings can consist of letters, numbers, or binary media files such as images, photos, or audio files.
+
+
+
+
+Integers
+Integers  represent numbers without fractions and can have SIGNED and UNSIGNED attributes. Usually, they may be used for IDs or counting numbers.
+
+Decimals
+Decimals represent numbers with fractions and store exact numeric values in the column. They can be signed and unsigned and are usually used for columns that store monetary values. In the comparison with the floating-point numbers, decimals are more accurate.
+
+Floating-point
+Floating-point represent numbers with fractions but do not store exact numeric values. They can be signed and unsigned. Floating-point numeric values use a double-precision 64-bit format or a single-precision 32-bit format to store data. They may lead to a loss of precision during arithmetic operations.
+
+MySQL Date & Time Data Types
+For managing date and time information in databases, MySQL data types are used that are divided into DATE, TIME, DATETIME, TIMESTAMP, and YEAR.
+
+
+
+JSON Data Type
+Starting with version 5.7.8, MySQL supports JSON data types that store JSON documents in the JSON column and provide access to document elements easily and quickly. The JSON format allows for a quick search of values within the document using a key or array index, which, in turn, will improve overall performance and optimize storage. In addition, JSON helps validate documents and in case of invalid values, you will get an error. The maximum size is 1GB.
+
+
+TEXT Data Type
+The MySQL TEXT data type is used to store long-text strings to display information about the table object, such as product descriptions, blog comments, etc. The storage size of the TEXT data type varies from 1 byte to 4 GB. Unlike the numeric data types, you do not have to set a length next to the TEXT data type in the table column. Moreover, TEXT values are not stored in the server’s memory but use the disk instead. Therefore, the TEXT data types require +1 additional byte to retrieve data.
+
+
+
+BLOB Datatype in MySQL
+Unlike the TEXT data types, which are non-binary string data types, the BLOB data types are binary strings. In MySQL, the BLOB data type represents a binary large object and can be used to store binary media data, such as audio or video links, images, or files.
+
+
+CHAR and VARCHAR data type
+In MySQL, the CHAR data types store non-binary strings with a fixed length that reaches 255 characters, while the VARCHAR data types store non-binary strings with a variable length having a maximum size of up to 65535 characters.
+
+ENUM Data Type in MySQL
+The MySQL ENUM data types are strings with enumeration values. ENUM allows you to set a list of predefined values and then choose any of them. If you add an invalid value that is not included in the list, you will get an empty string.
